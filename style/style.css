@@ -1,0 +1,202 @@
+/* Resetando margens e padding e definindo a tipografia global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BF84D9;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover;
+    padding-top: 80px; /* Ajuste para espaçar o conteúdo do menu fixo */
+}
+
+
+/* Cabeçalho e Menu */
+header {
+    position: relative;
+    background-color: #5c0f7e;
+    color: white;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5c0f7e;
+    z-index: 1000;
+}
+
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu li {
+    margin: 0 20px;
+}
+
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.menu li a:hover {
+    color: #9b59b6;
+}
+
+
+/* Seção Hero */
+.hero {
+    background-color: #8540a3;
+    padding: 150px 0 50px; /* Maior padding superior para o efeito de menu fixo */
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Estilo das seções */
+.section {
+    width: 100%;  /* Diminuir a largura das seções */
+    max-width: 1400px;  /* Largura máxima das seções em telas grandes */
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto; /* Centraliza a seção */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/* Títulos e parágrafos */
+.section h2 {
+    font-size: 2.5rem;
+    color: #9b59b6;
+    margin-bottom: 20px;
+}
+
+
+.section p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+.sindy {
+    width: 60%;
+}
+figure {
+    background-color: rgb(173, 214, 250);
+    border: 1px solid skyblue;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#sindy{
+    margin: 0 ;
+    display: inline-block;
+}
+
+#sindy img{
+    width: 222px;
+    display: block; /* Isso garante que a imagem não tenha margem no lado direito */
+    margin: 0 auto; /* Centraliza a imagem dentro do seu contêiner */
+}
+
+.fluxogramaSindy{
+    width: 60%;
+}
+
+.alex{
+    width: 50%;
+}
+
+.mariaeduarda{
+    width: 50%;
+}
+
+.rebeca{
+    width: 50%;
+}
+
+.monyque{
+    width: 50%;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Animação de Fade-In */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+
+    .section p {
+        font-size: 1rem;
+    }
+}
